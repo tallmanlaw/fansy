@@ -1,0 +1,72 @@
+body {
+    height: 98vh;
+    background-color: black;
+    margin: 20px;
+}
+h1 {
+    font-family:'Oswald';
+    color: white;
+    margin: 10px;
+    padding: 2px;
+    font-size: 25px;
+}
+h2 {
+    font-family:'Sonsie One';
+    color:white;
+    margin: 10px;
+    padding: 2px;
+    font-size: 22px;
+}
+h4 {
+    font-family:"EB Garamond";
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-bottom: 1px dashed black;
+    height: 5px;
+}
+main {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+}
+.pic {
+    display: grid;
+    height: 200px;
+    background-size: cover;
+    background-position: 33% 69%;
+}
+.one {
+    background-image: url(images/lake.jpg);
+}
+.two {
+    background-image: url(images/empire.jpg);
+}
+.three {
+    background-image: url(images/person.jpg);  
+}
+.four {
+    background-image: url(images/tree.jpg);
+}
+.five {
+    background-image: url(images/geo.jpg); 
+}  
+.six {
+    background-image: url(images/sand.jpg);
+}
+.seven {
+    background-image: url(images/bridge.jpg);
+}
+.eight {
+    background-image: url(images/lens.jpg);
+}
+@media only screen and (min-width: 600px) {
+    main {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .pic {
+        background-position: 40% 60%;
+    }
+}
